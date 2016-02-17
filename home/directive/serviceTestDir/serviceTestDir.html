@@ -1,1 +1,36 @@
-<div>servicetest</div>
+<div layout="column" layout-fill layout-margin>
+
+    <!-- Header -->
+	<div layout="column" flex="60">
+		<div layout="row" layout-align="center" id = "monitorChoose-Service">Choose a Service</div>
+		<div layout="row" layout-align="center">
+			<md-button id="monitorService-button" class="md-raised md-primary"> Service 1 
+			<md-icon md-font-set="material-icons" id="monitor-service-icon"> playlist_add </md-icon> 
+			</md-button>
+		</div>
+
+	</div>
+    <!-- Header -->
+
+    <!-- footer -->
+	<div flex="40" layout="column" layout-align="end">
+	<div layout="row">
+		<div flex="70">
+			<md-button id="deploy-icon-btn" class="md-fab md-mini md-primary" aria-label="Use Android"> 
+			<i class="material-icons footer-icon-align">list</i> 
+			</md-button>
+			<label class="footer-icon-label">All Services</label>
+		</div>
+
+
+		<div flex="30" layout="row" layout-align="end">
+		  <md-button class="md-fab md-mini md-primary" style="background-color:#60A690;" ng-click="activateAction()" ng-disabled="isActivate">
+		  	<i class="material-icons footer-icon-align ">widgets</i>
+          </md-button>
+		</div>
+	</div>
+	</div>
+	<!-- footer -->
+
+</div>
+
