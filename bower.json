@@ -21,7 +21,8 @@
     "angular-ui-utils": "0.1",
     "launchpad-api": "git@github.com:ADTRAN/launchpad-api.git#0.2.0",
     "jquery": "2.0",
-    "less.js": "1.6"
+    "less.js": "1.6",
+    "angular-material-data-table": "~0.9.11"
   },
   "resolutions": {
     "angular": "1.4.8"

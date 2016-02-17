@@ -1,1 +1,79 @@
-<div>SLA</div>
+<div layout="column" id="monitorService-container" layout-padding>
+	<div flex="26" layout="column">
+		<div flex="10" layout="row" id="potentialSLATitle">Potential SLA</div>
+		<div flex="40" layout="row" id="choosePotentialSLA">
+			<div flex="50">
+				<md-input-container class="md-block"> <label
+					class="monitorService-fontstyle">Choose Test Type</label> <md-select
+					ng-model="testType"> <md-option
+					ng-repeat="test in ['Testhead/ADVA',2,3,4,5]">{{test}}</md-option>
+				</md-select> </md-input-container>
+			</div>
+			<div flex="50">
+				<md-input-container class="md-block"> <label
+					class="monitorService-fontstyle">Choose P-bit</label> <md-select ng-model="pBit">
+				<md-option ng-repeat="bit in [3,4,5,7]">{{bit}}</md-option> </md-select> </md-input-container>
+			</div>
+		</div>
+	</div>
+
+	<div flex="14" layout="row">
+		<md-button id="potentialSLARunBtn"
+			class="md-raised md-primary monitorService-btnstyle">Run</md-button>
+	</div>
+	<div flex="60">
+		<div md-whiteframe="3" flex="100">
+			<!-- ------------- Table begins ----------- -->
+
+			<!-- <md-toolbar class="md-table-toolbar md-default tableToolbar">
+			<div layout="row" class="md-toolbar-tools">
+				<span flex="40" id="" class="monitorService-fontstyle">Throughput Results</span>
+				<span flex="30" id="" class="monitorService-fontstyle">View Past Results</span>
+				<span flex="25" id="" class="monitorService-fontstyle">Save</span>
+			</div>
+			</md-toolbar> -->
+			
+			<!-- try -->
+			<md-toolbar layout="row" class="md-table-toolbar md-default tableToolbar">
+			<div flex="50" id="monitorService-throughputlabeldiv">
+				<span id="monitorService-throughputlabel" class="monitorService-fontstyle">Throughput Results</span>
+			</div>
+			<div flex="50" layout="row" layout-align="end">	
+				<md-button flex="70" id="" class="monitorService-tablebtn">View Past Results</md-button>
+				<md-button flex="30"  id="" class="monitorService-tablebtn">Save</md-button>
+			</div>
+			</md-toolbar>
+			
+			
+			<md-divider></md-divider>
+
+			<md-table-container
+				id="activateMonitor-throughputResultTableContainer">
+			<table md-table md-row-select md-progress="promise"
+				id="activateMonitor-throughputResultTable">
+				<thead md-head>
+					<tr md-row>
+						<th md-column md-numeric>Frame Length (Bytes)</th>
+						<th md-column md-numeric>Successful Throughput (Mbps)</th>
+						<th md-column md-numeric>Delay Max (ms)</th>
+						<th md-column md-numeric>Delay Min (ms)</th>
+						<th md-column md-numeric>Avg (ms)</th>
+					</tr>
+				</thead>
+				<tbody md-body>
+					<tr md-row ng-repeat="result in throughputResult">
+						<td md-cell>{{result.frameLength}}</td>
+						<td md-cell>{{result.successfulThroughput}}</td>
+						<td md-cell>{{result.delayMax}}</td>
+						<td md-cell>{{result.delayMin}}</td>
+						<td md-cell>{{result.avg}}</td>
+					</tr>
+				</tbody>
+			</table>
+			</md-table-container>
+
+			<!-- <md-table-pagination md-limit=" " md-page=" " md-total=" " md-on-paginate="onPaginate" md-page-select></md-table-pagination>   -->
+
+		</div>
+
+	</div>
