@@ -1,28 +1,11 @@
-angular.module('home').directive('monitorServiceDir', function($timeout) {
+(function () {'use strict';} ());
+
+angular.module('home').directive('monitorServiceDir', function ($http,$timeout) {
   return {
-    restrict: 'E',
-    replace: true,
-    scope: {},
     templateUrl: 'home/directive/monitorServiceDir/monitorServiceDir.html',
-    link: function(scope, element, attrs, fn) {
-      var syncContext = function() {
-        $timeout(function() {scope.context = launchpadAPI.context.all();});
-      };
+    link: function (scope, element, attrs) { 
+    
+    },
 
-      launchpadAPI.bind('contextChange', syncContext);
-
-      scope.pushContext = function(key, valString) {
-        if(typeof key === 'string' && key !== '') {
-          try {
-            var val = JSON.parse(valString);
-            launchpadAPI.context.set(key, val);
-          } catch(e) {
-            return;
-            }
-        }
-        scope.context = launchpadAPI.context.all();
-      };
-      syncContext();
-        }
-	};
+  };
 });

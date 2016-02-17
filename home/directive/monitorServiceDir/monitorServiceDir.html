@@ -1,5 +1,46 @@
-<div>
-  <md-toolbar id="saheader" class="md-primary md-hue-1 ap-z1 ap-noselect" layout-padding>
-    <div class="md-toolbar-tools">Test monitor test directive</div>
-  </md-toolbar>
+<div class="monitor-service-header">
+  <div id="monitor-service-content" class="monitor-service-buttons-main">
+    <div class="monitor-service-buttons-sub" id="monitor-service-config-title">Choose a Service</div>
+    <div layout=row layout-align="center center">
+      <md-button  class="md-raised md-primary monitor-service-button-align">Service 1
+        <md-button class="md-icon-button monitor-service-button-icon">
+          <md-icon md-font-set="material-icons" id="monitor-service-config-icon">playlist_add</md-icon>
+        </md-button>
+      </md-button>
+    </div>     
+  </div>
+  <div layout="row" layout-margin>
+    <div flex="50" class="monitor-service-test-bckgrdcolor">
+      <div class="monitor-service-column-title"><b>OAM</b></div>
+      <div class="monitor-service-column-row1">Loopback Test
+        <md-icon class="monitor-service-keyboard-icon">keyboard_arrow_right</md-icon>
+      </div>
+      <div class="monitor-service-column-row2">Link Trace Test
+        <md-icon class="monitor-service-keyboard-icon">keyboard_arrow_right</md-icon>
+      </div>
+    </div>
+    <div flex="50" class="monitor-service-test-bckgrdcolor">
+      <div class="monitor-service-column-title"><b>Potential SLA</b></div>
+      <div class="monitor-service-column-row1">Throughput Test
+        <md-icon class="monitor-service-keyboard-icon">keyboard_arrow_right</md-icon>
+      </div>
+    </div>
+  </div>
+  <footer class="monitor-service-footer" >
+    <div class="monitor-service-buttons-sub">
+      <md-icon class="monitor-service-keyboard-down-icon">keyboard_arrow_down</md-icon>
+      <label><b>View More</b></label>
+    </div>
+    <div class="monitor-service-left-button">
+      <md-button type="button" class="md-fab md-mini md-primary monitor-service-icon-bg">
+        <md-icon>view_list</md-icon>
+      </md-button>
+    <span class="monitor-service-icon-text">All Services</span>
+    </div>
+    <div class="monitor-service-right-button">
+      <md-button type="button" class="md-fab md-mini md-primary monitor-service-icon-bg">
+        <md-icon md-font-set="material-icons">widgets</md-icon>
+      </md-button>  
+    </div>
+  </footer>
 </div>
