@@ -1,0 +1,43 @@
+{
+  "app": {
+    "app-id": "com.adtran.monitor-widget",
+    "type": "app",
+    "full-name": "monitor-widget",
+    "short-name": "monitoe-widget",
+    "initials": "monitor-widget",
+    "version": "0.1.0",
+    "show": true,
+    "icon-url": "images/appIcons/Template.png",
+    "description": "monitor-widget",
+    "container-url": "/apps/monitor-widget",
+    "resize": {
+      "min-height": 13,
+      "max-height": -1,
+      "min-width": 13,
+      "max-width": -1
+    },
+    "defaults": {
+      "size": {
+        "width": 14,
+        "height": 15
+      },
+      "app-config": {},
+      "context": {},
+      "start-fullscreen": false
+    },
+    "widget": {
+      "menu": {
+        "task": "Monitor",
+        "context": {
+          "type": "Service",
+          "list": []
+        }
+      }
+    },
+    "theme-color": "#018a87",
+    "header-icons": {
+      "search": false,
+      "menu": false
+    }
+  }
+}

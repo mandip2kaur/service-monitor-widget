@@ -1,0 +1,16 @@
+.idea
+.DS_Store
+*-SNAPSHOT.tgz
+bower_components
+build
+dist
+node_modules
+public
+reports
+snapshots
+temp
+tmp
+.tmp
+launchpad
+jenkins.properties
+.project
