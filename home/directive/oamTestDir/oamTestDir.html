@@ -1,1 +1,94 @@
-<div>OAM</div>
+<div >
+  <md-content>
+    <div class="monitor-service-button" id="monitor-service-title">Choose a Service</div>
+    <md-button class="md-raised md-primary monitor-service-button-align" id="monitor-service-mainBtn">Service 1
+      <md-button class="md-icon-button monitor-service-button-icon">
+        <md-icon md-font-set="material-icons" id="monitor-service-list-icon">playlist_add</md-icon>
+      </md-button>
+    </md-button>
+
+    <div class="monitor-service-div2">
+      <b>OAM</b>
+        <div layout="row">
+          <div flex="50">
+            Choose Test Type
+            <div>
+              <md-button class="md-raised md-primary buttons"><b>Loopback</b>
+                <md-icon md-font-set="material-icons icon-color-black">keyboard_arrow_down</md-icon>
+              </md-button>
+              
+              <md-button class="md-raised md-primary runbtn"><b>RUN</b>
+              </md-button>
+              
+            </div>
+          </div>
+          
+          <div flex="50">
+            Choose Remote MEP
+            <div>
+              <md-button class="md-raised md-primary buttons"><b>MEP1</b>
+                <md-icon md-font-set="material-icons icon-color-black">keyboard_arrow_down</md-icon>
+              </md-button>
+            </div>
+          </div>
+        </div>
+      
+      
+    </div>
+    
+    
+    
+    
+    <div class="monitor-service-results">
+      <div class="monitor-service-results-sub">
+        <b>LoopBack Results</b>
+        <md-icon md-font-set="material-icons monitor-service-icon-color-green">priority_high</md-icon>Success
+        <md-icon md-font-set="material-icons monitor-service-icon-color-green">cached</md-icon>Data Mismatch
+        <md-icon md-font-set="material-icons monitor-service-icon-color-green">star_rate</md-icon>Timeout
+        <md-icon md-font-set="material-icons monitor-service-icon-color-green">panorama_fish_eye</md-icon>Out of Order
+        <md-icon md-font-set="material-icons monitor-service-icon-color-green">cached</md-icon>In Progress
+      </div>
+      <div layout="row" style="padding-top:4%;padding-bottom:4%;">
+        <md-button type="button" class="md-fab md-mini md-primary monitor-service-icon-bg-green">
+          <md-icon md-font-set="material-icons monitor-service-icon-color">priority_high</md-icon>
+        </md-button>
+        <md-button type="button" class="md-fab md-mini md-primary monitor-service-icon-bg-green">
+          <md-icon md-font-set="material-icons monitor-service-icon-color">priority_high</md-icon>
+        </md-button>
+        <md-button type="button" class="md-fab md-mini md-primary monitor-service-icon-bg-white">
+          <md-icon md-font-set="material-icons monitor-service-icon-color-green">cached</md-icon>
+        </md-button>
+        <md-button type="button" class="md-fab md-mini md-primary monitor-service-icon-bg-white">
+          <md-icon md-font-set="material-icons monitor-service-icon-color-green">cached</md-icon>
+        </md-button>
+        <md-button type="button" class="md-fab md-mini md-primary monitor-service-icon-bg-white">
+          <md-icon md-font-set="material-icons monitor-service-icon-color-green">cached</md-icon>
+        </md-button>
+      </div>
+    </div>
+  
+  </md-content>
+  
+  <!-- Footer -->
+  <div layout="row">
+    <footer class="monitor-service-footer">
+      <div class="monitor-service-left-button">
+        <md-button type="button" class="md-fab md-mini md-primary monitor-service-icon-bg">
+          <md-icon md-font-set="material-icons monitor-service-icon-color">keyboard_backspace</md-icon>
+        </md-button>
+        <span class="activate-device-icon-text" id="activate-device-viewDeviceText">Back</span>
+      </div>
+  
+      <div class="monitor-service-right-button">
+        <div>
+          <md-button type="button" class="md-fab md-mini md-primary monitor-service-icon-bg" ng-click="activateAction()" ng-disabled="isActivateDisable">
+            <md-icon md-font-set="material-icons monitor-service-icon-color">widgets</md-icon>
+          </md-button>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+      <div style="clear:both;"></div>
+    </footer>
+  </div>
+  <!-- Footer ends-->
+</div>
